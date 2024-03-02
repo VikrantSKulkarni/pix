@@ -1,0 +1,255 @@
+.wrapper {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.main-content {
+	background-color: #f9f9f9 !important;
+}
+.main-content .content-top {
+	background-color: #fff;
+	max-width: 1200px;
+	width: 100%;
+}
+.main-content .content-wrapper {
+	padding: 0px;
+}
+.main-content .content-wrapper .content .content-header {
+	margin: 15px 0;
+	padding: 8px 10px 8px;
+	top: 0px;
+}
+.main-content .content-wrapper .content .content-header .content-header-title {
+	line-height: 54px;
+}
+.main-content .content-wrapper .content .content-header .content-header-title .title {
+	font-size: 36px;
+	color: var(--color-primary);
+}
+.main-content .content-wrapper .content .content-body {
+	background-color: #f9f9f9;
+	padding: none;
+}
+.main-content .content-wrapper .content .content-body table.datagrid {
+	background-color: #fff;
+}
+.main-content .content-wrapper .content .content-body form.ea-edit-form, .main-content .content-wrapper .content .content-body form.ea-new-form {
+	background-color: #fff;
+	padding: 8px 10px 8px;
+}
+.user-right-container {
+	display: block;
+	width: 100%;
+	max-width: 98%;
+}
+.user-right-container .user-img {
+	max-width: 89px;
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.user-right-container .progress-section {
+	width: 100%;
+	height: 100%;
+}
+.user-right-container .progress-section .progress {
+	width: 100px;
+	height: 100px;
+	background: none;
+	position: relative;
+}
+.user-right-container .progress-section .progress::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 6px solid #eee;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.user-right-container .progress-section .progress > span {
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+.user-right-container .progress-section .progress .progress-left {
+	left: 0;
+}
+.user-right-container .progress-section .progress .progress-bar {
+	width: 100%;
+	height: 100%;
+	background: none;
+	border-width: 6px;
+	border-style: solid;
+	position: absolute;
+	top: 0;
+}
+.user-right-container .progress-section .progress .progress-left .progress-bar {
+	left: 100%;
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
+	border-left: 0;
+	-webkit-transform-origin: center left;
+	transform-origin: center left;
+}
+.user-right-container .progress-section .progress .progress-right {
+	right: 0;
+}
+.user-right-container .progress-section .progress .progress-right .progress-bar {
+	left: -100%;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+	border-right: 0;
+	-webkit-transform-origin: center right;
+	transform-origin: center right;
+}
+.user-right-container .progress-section .progress .progress-value {
+	flex-direction: column;
+}
+.user-right-container .chart-container {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.company-record {
+	text-align: center;
+}
+.company-record .record-count {
+	font-family: RobotoSerif;
+	color: var(--color-success);
+	font-weight: Bold;
+	font-size: var(--font-size-xxl);
+	line-height: 2rem;
+}
+.company-record .record-label {
+	color: var(--color-muted);
+}
+.users-list .user-index-detail {
+	margin-bottom: 35px;
+	display: block;
+	position: relative;
+}
+.users-list .user-index-detail .users-img {
+	max-width: 140px;
+	height: 140px;
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.users-list .user-index-detail .special-outline-female {
+	outline: 2px solid #ff71bd;
+	border-radius: 50%;
+}
+.users-list .user-index-detail .special-outline-male {
+	outline: 2px solid #51abff;
+	border-radius: 50%;
+}
+.users-list .user-index-detail .new-user-login-outline {
+	outline: 2px solid #fff;
+	border-radius: 50%;
+}
+.users-list .user-index-detail .overlay {
+	position: absolute;
+	color: white;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	max-width: 140px;
+	margin: 0 auto;
+	background: url(./images/user-overlay.png) no-repeat;
+	z-index: 999;
+}
+.users-list .user-index-detail .overlay:hover {
+	outline: 2px solid red;
+	border-radius: 50%;
+}
+.users-list .user-index-detail .overlay:hover .user-name {
+	height: 44px;
+}
+.users-list .user-index-detail .overlay .user-name {
+	position: absolute;
+	bottom: 11%;
+	left: 20%;
+	font-size: 13px;
+	word-wrap: break-word;
+	max-width: 85px;
+	width: 100%;
+	word-spacing: 85px;
+	height: 22px;
+	overflow: hidden;
+	transition: all 1s;
+}
+.users-list .user-index-detail .overlay .login-status {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	padding: 0.75rem;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.users-list .user-index-detail .overlay .emp-id {
+	position: absolute;
+	left: 0px;
+	top: 5px;
+	padding: 0.3rem;
+	background-color: #eee;
+	border: 2px solid white;
+	font-size: 12px;
+	color: #000;
+}
+.user-detail-female-bg1 {
+	background-color: #ffe5f3 !important;
+}
+.user-detail-female-bg2 {
+	background-color: #ffb2db !important;
+}
+.user-detail-female-bg3 {
+	background-color: #ffcfe9 !important;
+}
+.user-detail-male-bg1 {
+	background-color: #e6f3ff !important;
+}
+.user-detail-male-bg2 {
+	background-color: #a7d5ff !important;
+}
+.user-detail-male-bg3 {
+	background-color: #cde7ff !important;
+}
+.new_user-login {
+	background-color: #f6f8fa f3 !important;
+}
+.user-female-avtar {
+	width: 137px !important;
+}
+.box-shadow {
+	box-shadow: 0px 0px 5px #eee;
+}
+.manager-img {
+	width: 36px;
+}
+.sidebar{
+	 float: left;
+	 height: 100%;
+	 width: 15%;
+	 margin-top: 20px;
+}
+.sidebar .navbar ul{
+	display: flex;
+	flex-direction: column;
+}
+.navbar ul li{
+	padding: 0px 15px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #000;
+}
